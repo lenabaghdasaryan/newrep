@@ -1,12 +1,14 @@
 function factorial(num) {
+
+    if (num === 0 || num === 1) return 1
+
     let fact1 = 1;
-    let i;
-    if (i == 0 || i == 1) {
-        console.log(fact1)
-    }
+
     for (i = 2; i <= num; i++) {
         fact1 *= i;
     }
-    console.log(fact1);
+
+    return fact1
 }
-factorial(5);
+
+factorial(1);
