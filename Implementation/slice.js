@@ -1,13 +1,11 @@
 function sliceArray(arr, first, last) {
     const newArr = [];
     if (last === undefined || last > arr.length) {
-        last = arr.length
+        last = arr.length;
     }
     last < 0 ? last = arr.length + last : last;
     for (let i = first; i < last; i++) {
-
-        let result = arr[i];
-        newArr.push(result)
+        newArr.push(arr[i])
     }
     console.log(newArr)
 }
